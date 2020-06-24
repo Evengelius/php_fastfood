@@ -1,7 +1,7 @@
 {
     "require": {
         "swiftmailer/swiftmailer": "^5.4",
-        "phpmailer/phpmailer": "^5.2",
+        "phpmailer/phpmailer": "^6.1",
         "mailin-api/mailin-api-php": "^1.0",
       "ext-curl": "*",
       "ext-pdo": "*",
