@@ -1,0 +1,487 @@
+/* YOUR CUSTOM STYLES */
+
+
+/*
+    Modal overflow
+
+    .modal_md_form {
+    overflow: hidden;
+}
+*/
+
+
+/* SideNav : fix the padding if "fixed" is used*/
+
+header,
+main,
+footer {
+    padding-left: 240px;
+}
+
+@media only screen and (max-width: 992px) {
+    header,
+    main,
+    footer {
+        padding-left: 0;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+.product-quick-look {
+    color: #0d47a1;
+    transition: all 0.5s ease-out .3s;
+}
+
+.product-quick-look:hover {
+    color: white;
+}
+
+.quantity_hide {
+    display: none;
+}
+
+/* Cache le label pour la quantité dans la page product info*/
+
+
+/* Error DIV */
+
+.has-error .help-block,
+.has-error .control-label,
+.has-error .radio,
+.has-error .checkbox,
+.has-error .radio-inline,
+.has-error .checkbox-inline,
+.has-error.radio label,
+.has-error.checkbox label,
+.has-error.radio-inline label,
+.has-error.checkbox-inline label {
+    color: #a94442;
+}
+
+.has-error .md-form {
+    border-color: #a94442;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.has-error .md-form:focus {
+    border-color: #843534;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+}
+
+.has-error .input-group-addon {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #a94442;
+}
+
+.has-error .form-control-feedback {
+    color: #a94442;
+}
+
+/* Aligned message error */
+.aligned-error {
+    padding-left: 45px;
+}
+
+/* Login page button  */
+
+.loader_checkout {
+    position: relative;
+    top: 12px;
+}
+
+/* User title for profile page */
+.userTitle {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #424242;
+    margin: 20px 0;
+}
+
+/* User title for profile page*/
+.userTitle h5 {
+    color: #fff;
+    font-weight: bold;
+}
+
+.titleCart {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+
+.cartButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.flex-profile-order {
+    display: flex;
+    justify-content: center;
+}
+
+/* The review star */
+
+div.stars {
+    display: inline-block;
+}
+
+input.star {
+    display: none;
+}
+
+input.star[type="radio"]:checked + label:after {
+    content: none;
+}
+
+label.star {
+    float: right;
+    padding: 10px;
+    font-size: 36px;
+    color: #444;
+    transition: all .2s;
+    padding-left: 20px !important;
+}
+
+input.star:checked ~ label.star:before {
+    content: '\f005';
+    color: #FD4;
+    transition: all .25s;
+}
+
+input.star-5:checked ~ label.star:before {
+    color: #FE7;
+}
+
+input.star-1:checked ~ label.star:before {
+    color: #FE7;
+}
+
+label.star:hover {
+    color: #F62;
+}
+
+label.star:before {
+    content: '\f006';
+    font-family: FontAwesome;
+    border: 0 !important;
+    margin: 4px 0 !important;
+}
+.load-more-reviews{
+	margin:6px auto;
+	display: block;
+}
+.load-more-cat{
+	margin:6px auto;
+	display: block;
+}
+.load-more-subcat{
+	margin:6px auto;
+	display: block;
+}
+/* Centered text in product info page */
+
+.text-color {
+    color: #c7c7c7;
+}
+
+/* Cart table */
+.total_amount h5 {
+    font-weight: bold;
+}
+
+.review-content {
+    font-weight: bold;
+    color: #b4b4b4;
+    transition: all 1s;
+}
+
+.review-content:hover {
+    color: #212121;
+}
+
+/* Border bottom on review */
+#bottom-hr  {
+    border-bottom: 1px solid #b4b4b4;
+}
+
+/* Email loading*/
+
+.email-loading {
+    position: relative;
+    top: 12px;
+    right: 18px;
+}
+
+/* Error Title */
+
+.error-title, .error-title p {
+    color: #b2b2b2;
+    font-weight: bold;
+}
+
+#home {
+    color: #ededed;
+}
+
+/* Slider text*/
+
+.slider-text {
+    color: #3e3e3e;
+    font-weight: bold;
+}
+
+
+/* Loading bar as bootstrap 3.3.2 for registration*/
+
+progress {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+@-webkit-keyframes progress-bar-stripes {
+    from {
+        background-position: 40px 0;
+    }
+    to {
+        background-position: 0 0;
+    }
+}
+@-o-keyframes progress-bar-stripes {
+    from {
+        background-position: 40px 0;
+    }
+    to {
+        background-position: 0 0;
+    }
+}
+@keyframes progress-bar-stripes {
+    from {
+        background-position: 40px 0;
+    }
+    to {
+        background-position: 0 0;
+    }
+}
+.progress {
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+}
+.progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #337ab7;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+.progress-striped .progress-bar,
+.progress-bar-striped {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    -webkit-background-size: 40px 40px;
+    background-size: 40px 40px;
+}
+.progress.active .progress-bar,
+.progress-bar.active {
+    -webkit-animation: progress-bar-stripes 2s linear infinite;
+    -o-animation: progress-bar-stripes 2s linear infinite;
+    animation: progress-bar-stripes 2s linear infinite;
+}
+.progress-bar-success {
+    background-color: #5cb85c;
+}
+.progress-striped .progress-bar-success {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+}
+.progress-bar-info {
+    background-color: #5bc0de;
+}
+.progress-striped .progress-bar-info {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+}
+.progress-bar-warning {
+    background-color: #f0ad4e;
+}
+.progress-striped .progress-bar-warning {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+}
+.progress-bar-danger {
+    background-color: #d9534f;
+}
+.progress-striped .progress-bar-danger {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+}
+.progress-bar-custom {
+    background-color: #263238;
+}
+.progress-striped .progress-bar-custom {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+}
+
+/* Author card */
+.author-card .card-up {
+    overflow: hidden;
+    height: 180px; }
+
+.author-card .avatar {
+    height: 170px;
+    width: 170px;
+    margin: -65px auto 0;
+    overflow: hidden; }
+.author-card .avatar img {
+    width: 100%; }
+.author-card .avatar .img-author {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid #fff; }
+
+.author-card .card-block {
+    text-align: center; }
+.author-card .card-block .card-title {
+    padding-bottom: 0.7rem; }
+
+
+/* Height widget: Gallery, Newsletter */
+.widget-spacing {
+    margin-bottom: 3.4rem;
+    margin-top: 1.7rem;
+}
+
+/* Widget column */
+.widget-column {
+    margin-top: 1.7rem;
+}
+
+/* Widget content */
+.widget-content .widget-tabs {
+    padding: 7px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 1.7rem;
+    margin-top: -1.7rem;
+    font-size: 13px;
+    word-wrap: break-word;
+}
+
+.widget-content .widget-tabs-content {
+    padding: 0px;
+}
+
+.widget-content .view {
+    margin-bottom: 1.5rem;
+}
+
+.widget-content .single-post {
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 1.5rem;
+}
+
+.widget-content .single-post:last-of-type {
+    border-bottom: none;
+}
+
+.widget-content .single-post .post-data {
+    margin-top: 0.2rem;
+    margin-bottom: 3.4rem;
+    font-weight: bold;
+    color: #616161;
+}
+
+.widget-content .single-post .post-data.featured {
+    margin-bottom: 4.5rem;
+}
+
+.widget-content .single-post .post-data p {
+    float: left;
+}
+
+.widget-content .single-post .post-data a {
+    float: right;
+}
+
+.widget-content .single-post h6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    color: #424242;
+}
+
+.widget-content .single-post h6:hover {
+    color: #616161;
+}
+
+/* Dark skin */
+.nav-tabs {
+    background-color: #3b3b3b;
+}
+
+.testee {
+    display: block;
+    margin: 0 auto;
+}
+
+.loading-overlay {
+    background: rgba(255, 255, 255, 0.7) none repeat scroll 0 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 63px;
+    z-index: 2;
+}
+
+.overlay-content {
+    color: #555;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}

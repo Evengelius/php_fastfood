@@ -1,0 +1,65 @@
+
+RewriteOptions inherit
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^md\-magazine\.be$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.md\-magazine\.be$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^css\/?$ "http\:\/\/www\.md\-magazine\.be\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^md\-magazine\.be$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.md\-magazine\.be$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^js\/?$ "http\:\/\/www\.md\-magazine\.be\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^md\-magazine\.be$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.md\-magazine\.be$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^mdb\-addons\/$ "http\:\/\/www\.md\-magazine\.be\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^md\-magazine\.be$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.md\-magazine\.be$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^lib\/$ "http\:\/\/www\.md\-magazine\.be\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^md\-magazine\.be$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.md\-magazine\.be$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^sass\/$ "http\:\/\/www\.md\-magazine\.be\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^md\-magazine\.be$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.md\-magazine\.be$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^templates\/$ "http\:\/\/www\.md\-magazine\.be\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^md\-magazine\.be$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.md\-magazine\.be$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^vendor\/$ "http\:\/\/www\.md\-magazine\.be\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^md\-magazine\.be$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.md\-magazine\.be$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^font\/?$ "http\:\/\/www\.md\-magazine\.be\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^md\-magazine\.be$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.md\-magazine\.be$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^img\/?$ "http\:\/\/www\.md\-magazine\.be\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^md\-magazine\.be$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.md\-magazine\.be$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^includes\/?$ "http\:\/\/www\.md\-magazine\.be\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^md\-magazine\.be$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.md\-magazine\.be$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^actions\/?$ "http\:\/\/www\.md\-magazine\.be\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^md\-magazine\.be$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.md\-magazine\.be$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^actions\/ajax$ "http\:\/\/www\.md\-magazine\.be\/" [R=301,L]
+
