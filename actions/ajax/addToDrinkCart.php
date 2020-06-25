@@ -27,7 +27,7 @@ if (isset($_SESSION['users'])) {
 
     if ($address->paye == 0) {
         if ($subject == 'cart') {
-            $cart_result = $dbh->prepare("SELECT * FROM commande_boisson WHERE boisson_id = :boissonId AND commande_id = :user_id");
+            $cart_result = $dbh->prepare("SELECT * FROM commande_boisson LEFT JOIN boisson b on b.id = commande_boisson.boisson_id WHERE boisson_id = :boissonId AND commande_id = :user_id");
             $cart_result->execute([
                 'boissonId' => $idDrink,
                 'user_id' => $_SESSION['users']->id
@@ -47,26 +47,31 @@ if (isset($_SESSION['users'])) {
                  * But update the quantity dynamically.
                  */
                 $new_qty = $quantity + $cart_row->quantite;
-                // Quantity = the number we set in the form + the number already inside the cart.
-                $req = $dbh->prepare("UPDATE commande_boisson SET quantite = :new_quantity WHERE boisson_id = :boissonId");
-                $req->execute([
-                    'new_quantity' => $new_qty,
-                    'boissonId' => $cart_row->boisson_id
-                    // The product quantity is updated according to its id in the cart table
-                ]);
+                if ($new_qty <= $cart_row->quantite_stock) {
+                    // Quantity = the number we set in the form + the number already inside the cart.
+                    $req = $dbh->prepare("UPDATE commande_boisson SET quantite = :new_quantity WHERE boisson_id = :boissonId");
+                    $req->execute([
+                        'new_quantity' => $new_qty,
+                        'boissonId' => $cart_row->boisson_id
+                        // The product quantity is updated according to its id in the cart table
+                    ]);
 
-                $sql = "SELECT DISTINCT boisson_id FROM commande_boisson WHERE commande_id=" . $_SESSION['users']->id;
-                $sql2 = "SELECT DISTINCT burger_id FROM commande_burger WHERE commande_id=" . $_SESSION['users']->id;
+                    $sql = "SELECT DISTINCT boisson_id FROM commande_boisson WHERE commande_id=" . $_SESSION['users']->id;
+                    $sql2 = "SELECT DISTINCT burger_id FROM commande_burger WHERE commande_id=" . $_SESSION['users']->id;
 
-                $resultCartDrink = $dbh->query($sql);
-                $resultCartBurgerAlready = $dbh->query($sql2);
-                $count = $resultCartDrink->rowCount() + $resultCartBurgerAlready->rowCount();
+                    $resultCartDrink = $dbh->query($sql);
+                    $resultCartBurgerAlready = $dbh->query($sql2);
+                    $count = $resultCartDrink->rowCount() + $resultCartBurgerAlready->rowCount();
 
-                $response['status'] = 'success';
-                $response['count'] = $count;
-                $response['message'] = '<span class="fa fa-check"></span> &nbsp; The drink does already exists inside the cart, the desired amount is updated.';
+                    $response['status'] = 'success';
+                    $response['count'] = $count;
+                    $response['message'] = '<span class="fa fa-check"></span> &nbsp; The drink does already exists inside the cart, the desired amount is updated.';
 
-                // Else it simply insert the product inside the cart if it ain't in the cart already.
+                    // Else it simply insert the product inside the cart if it ain't in the cart already.
+                } else {
+                    $response['status'] = 'error';
+                    $response['message'] = '<span class="fa fa-exclamation-triangle"></span> &nbsp; Sorry the amount you have set is too high!';
+                }
             } else {
                 $req = $dbh->prepare("INSERT INTO commande_boisson
 			(boisson_id, quantite, commande_id)
