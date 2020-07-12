@@ -24,16 +24,16 @@ define ('PASSWORD','yourPassWord');
 
 ## Functionnalities
 
-User Management.
+User Management.<br />
 Each customer order corresponds to a specific user: the one who orders
 
-Inventory management.
+Inventory management.<br />
 With each purchase, the quantity of burgers or drinks is decremented per unit corresponding to the quantity chosen
 
-Order management.
+Order management.<br />
 Once an order is done, it appears on the user's profile page with a resume of itself.
 
-Exception handling
+Exception handling<br />
 A 404 page is displayed when the product or page does not exist or is poorly written.
 
 
