@@ -24,13 +24,13 @@ define ('PASSWORD','yourPassWord');
 
 ## Functionnalities
 
-User Management.<br />
+**User Management**<br />
 Each customer order corresponds to a specific user: the one who orders
 
-Inventory management.<br />
+**Inventory management**<br />
 With each purchase, the quantity of burgers or drinks is decremented per unit corresponding to the quantity chosen
 
-Order management.<br />
+**Order management**<br />
 Once an order is done, it appears on the user's profile page with a resume of itself.
 
 Exception handling<br />
