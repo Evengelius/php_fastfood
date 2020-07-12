@@ -1,4 +1,4 @@
-[![Spring Boot](https://fr.wikipedia.org/wiki/Fichier:PHP-logo.svg)](https://spring.io)
+[![Spring Boot](https://www.php.net/images/logos/new-php-logo.svg)](https://spring.io)
 
 -----------------------------------------------------
 
