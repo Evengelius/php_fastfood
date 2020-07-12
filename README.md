@@ -16,6 +16,9 @@ Php takes care of everything on the front end.
 ```
 git clone https://github.com/Evengelius/php_fastfood.git your_desired_name
 
+Create a database and name it *fastfood*.<br />
+Then import the SQL file present here, in your database.<br />
+
 // includes/config.inc/php
 define ('DSN', 'mysql:dbname=fastfood;host=localhost;charset=utf8');
 define ('USER', 'yourUserName');
