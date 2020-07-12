@@ -14,15 +14,15 @@ Php takes care of everything on the front end.
 ### Installing
 
 ```
-git clone https://github.com/Evengelius/php_fastfood.git your_desired_name
+1. git clone https://github.com/Evengelius/php_fastfood.git your_desired_name
 
-Create a database and name it *fastfood*.<br />
-Then import the SQL file present here, in your database.<br />
+2. Create a database and name it fastfood.
+3. Import the SQL file present here, in your database.
 
-// includes/config.inc/php
-define ('DSN', 'mysql:dbname=fastfood;host=localhost;charset=utf8');
-define ('USER', 'yourUserName');
-define ('PASSWORD','yourPassWord');
+4. // includes/config.inc/php
+   define ('DSN', 'mysql:dbname=fastfood;host=localhost;charset=utf8');
+   define ('USER', 'yourUserName');
+   define ('PASSWORD','yourPassWord');
 ```
 
 ## Functionnalities
