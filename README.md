@@ -22,10 +22,19 @@ define ('USER', 'yourUserName');
 define ('PASSWORD','yourPassWord');
 ```
 
-
-End with an example of getting some data out of the system or using it for a little demo
-
 ## Functionnalities
 
-Explain how to run the automated tests for this system
+User Management.
+Each customer order corresponds to a specific user: the one who orders
+
+Inventory management.
+With each purchase, the quantity of burgers or drinks is decremented per unit corresponding to the quantity chosen
+
+Order management.
+Once an order is done, it appears on the user's profile page with a resume of itself.
+
+Exception handling
+A 404 page is displayed when the product or page does not exist or is poorly written.
+
+
 
