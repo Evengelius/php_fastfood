@@ -5,10 +5,13 @@
 # PHP | Fast-Food
 
 This is a fast-food application
-php takes care of everything on the front end.
 
 
-## Installing
+## Getting Started
+
+Php takes care of everything on the front end.
+
+### Installing
 
 ```
 git clone https://github.com/Evengelius/php_fastfood.git your_desired_name
