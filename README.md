@@ -33,7 +33,7 @@ With each purchase, the quantity of burgers or drinks is decremented per unit co
 **Order management**<br />
 Once an order is done, it appears on the user's profile page with a resume of itself.
 
-Exception handling<br />
+**Exception handling**<br />
 A 404 page is displayed when the product or page does not exist or is poorly written.
 
 
