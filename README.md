@@ -11,7 +11,7 @@ This is a fast-food application
 
 Php takes care of everything on the front end.
 
-<ins>Before going further, please make sure you are processing the repositories **in order** as follow</ins> : 
+<ins>Before going further, please make sure you are processing the repositories in order as follow</ins> : 
 
 * [Php](https://github.com/Evengelius/php_fastfood)<br />
 * [Spring](https://github.com/Evengelius/spring_fastfood)<br />
