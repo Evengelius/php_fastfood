@@ -29,6 +29,9 @@ Php takes care of everything on the front end.
    define ('DSN', 'mysql:dbname=fastfood;host=localhost;charset=utf8');
    define ('USER', 'yourUserName');
    define ('PASSWORD','yourPassWord');
+
+5. Test it.
+   (I suggest you to use Laragon for it as it creates virtual hosts automatically).
 ```
 
 ## Functionnalities
