@@ -37,11 +37,11 @@ Php takes care of everything on the front end.
 ## Functionnalities
 
 **User Management**<br />
-Each customer order corresponds to a specific user: the one who orders<br />
+Each customer order corresponds to a specific user: the one who orders.<br />
 Which means, whenever you register : you create a command user.
 
 **Inventory management**<br />
-With each purchase, the quantity of burgers or drinks is decremented per unit corresponding to the quantity chosen
+With each purchase, the quantity of burgers or drinks is decremented per unit corresponding to the quantity chosen.
 
 **Order management**<br />
 Once an order is done, it appears on the user's profile page with a resume of itself.
