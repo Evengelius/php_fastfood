@@ -4,7 +4,7 @@
 
 # PHP | Fast-Food
 
-This is a fast-food application
+This is a fast-food application.
 
 
 ## Getting Started
